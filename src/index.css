@@ -193,3 +193,13 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
   .edu{flex-wrap:wrap}
   .edu .date{margin-left:0}
 }
+
+/* hide Netlify "Powered by" badge */
+#nl-badge,.nl-badge,#nl-card{display:none!important}
+
+/* floating WhatsApp button */
+.wa-float{position:fixed;right:28px;bottom:28px;z-index:60;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:#67d072;
+  box-shadow:0 0 0 17px rgba(255,255,255,.05),0 6px 28px rgba(103,208,114,.35);transition:transform .2s,box-shadow .2s}
+.wa-float svg{width:30px;height:30px}
+.wa-float:hover{transform:scale(1.06);box-shadow:0 0 0 19px rgba(255,255,255,.07),0 8px 34px rgba(103,208,114,.5)}
+@media (max-width:760px){.wa-float{right:24px;bottom:24px;width:54px;height:54px;box-shadow:0 0 0 13px rgba(255,255,255,.05),0 6px 24px rgba(103,208,114,.35)}.wa-float svg{width:27px;height:27px}}

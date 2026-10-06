@@ -11,7 +11,7 @@ export default function Hero() {
             <div className="badge reveal"><span className="dot" /> Open to new opportunities</div>
             <div className="kicker reveal">Senior Full Stack Developer</div>
             <div className="also reveal"><span>Also worked as</span><b>React Native Developer</b><b>Shopify Developer</b></div>
-            <h1 className="reveal">Noman turning complex ideas into clean, scalable products.</h1>
+            <h1 className="reveal">I'm Noman. I turn complex ideas into clean, scalable products.</h1>
             <p className="lead reveal">
               I build fast, reliable web and mobile apps with React, Next.js and React Native, and power them with Node.js,
               NestJS, MongoDB and PostgreSQL. Over 8 years I've shipped products in e-commerce, Shopify, real estate, Web3,
@@ -19,12 +19,12 @@ export default function Hero() {
             </p>
             <div className="hero-cta reveal">
               <a href="#projects" className="btn btn-primary">View my work <Icon name="arrowDown" /></a>
-              <a href={RESUME_URL} download={RESUME_FILENAME} className="btn btn-ghost">Resume <Icon name="arrowUp" /></a>
+              <a href={RESUME_URL} download={RESUME_FILENAME} className="btn btn-ghost"><Icon name="download" />Resume</a>
             </div>
             <div className="stats reveal">
               <div className="stat"><b>8+</b><span>Years building</span></div>
               <div className="stat"><b>22+</b><span>Shipped products</span></div>
-              <div className="stat"><b>MERN</b><span>Stack</span></div>
+              <div className="stat"><b>5</b><span>Apps on Play Store</span></div>
             </div>
           </div>
 
@@ -50,7 +50,7 @@ export default function Hero() {
                 <span className="cursor" />
               </pre>
             </div>
-            <div className="float f2"><Icon name="check" />Available for hire</div>
+            <div className="float f2"><Icon name="check" />US &amp; KSA clients</div>
           </div>
         </div>
       </div>

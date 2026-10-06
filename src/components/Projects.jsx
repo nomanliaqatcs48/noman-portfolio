@@ -3,6 +3,10 @@ import { Icon } from './Icons.jsx';
 import { projects } from '../data/projects.js';
 import { filters } from '../data/site.js';
 
+// Order projects by filter tab order, so "All" shows Full Stack first
+const catOrder = filters.map((f) => f.key);
+const sortedProjects = [...projects].sort((a, b) => catOrder.indexOf(a.cat) - catOrder.indexOf(b.cat));
+
 export default function Projects() {
   const [active, setActive] = useState('all');
   const [touched, setTouched] = useState(false);
@@ -26,7 +30,7 @@ export default function Projects() {
           ))}
         </div>
         <div className="projects">
-          {projects.map((p) => {
+          {sortedProjects.map((p) => {
             const hidden = active !== 'all' && p.cat !== active;
             return (
               <article key={p.name} className={`project reveal${touched ? ' in' : ''}${hidden ? ' hide' : ''}`}>

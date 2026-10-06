@@ -9,7 +9,7 @@ export default function Contact() {
           <div className="eyebrow">06. Contact</div>
           <h2>Let's build something together</h2>
           <p className="sub" style={{ marginBottom: 32 }}>
-            I'm open to full-time roles, contracts and freelance projects. The fastest way to reach me is email or LinkedIn.
+            I'm open to full-time roles, contracts and freelance projects. The fastest way to reach me is email, LinkedIn or WhatsApp.
           </p>
           <div className="contact-grid">
             <a className="c-card" href={`mailto:${contact.email}`}>
@@ -20,7 +20,7 @@ export default function Contact() {
               <div className="ic"><Icon name="linkedin" /></div>
               <div><small>LinkedIn</small><b>{contact.linkedinLabel}</b></div>
             </a>
-            <a className="c-card" href={contact.phoneHref}>
+            <a className="c-card" href={contact.whatsappHref} target="_blank" rel="noopener noreferrer">
               <div className="ic"><Icon name="call" /></div>
               <div><small>Phone / WhatsApp</small><b>{contact.phone}</b></div>
             </a>
