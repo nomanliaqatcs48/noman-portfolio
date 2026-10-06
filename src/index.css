@@ -194,8 +194,8 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
   .edu .date{margin-left:0}
 }
 
-/* hide Netlify "Powered by" badge */
-#nl-badge,.nl-badge,#nl-card{display:none!important}
+/* hide Netlify "Powered by" badge (Netlify injects it inside an iframe, so hide the frame itself) */
+#nl-badge-frame,iframe[id^="nl-badge"],iframe[src*="netlify-badge"],iframe[title*="Netlify"],#nl-badge,.nl-badge,#nl-card{display:none!important;visibility:hidden!important}
 
 /* floating WhatsApp button */
 .wa-float{position:fixed;right:28px;bottom:28px;z-index:60;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:#67d072;
